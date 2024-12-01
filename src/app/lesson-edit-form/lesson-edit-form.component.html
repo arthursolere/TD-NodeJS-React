@@ -1,0 +1,129 @@
+<div class="container">
+  <h1>Edit Lesson Form</h1>
+  <form (ngSubmit)="saveLesson()">
+    <!-- Title -->
+    <div class="row mb-3">
+      <div class="col-md-3">
+        <label for="title" class="form-label">Title</label>
+      </div>
+      <div class="col-md-9">
+        <input
+          type="text"
+          id="title"
+          [(ngModel)]="lesson.title"
+          name="title"
+          class="form-control"
+          placeholder="Enter the lesson title"
+        />
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div class="row mb-3">
+      <div class="col-md-3">
+        <label for="description" class="form-label">Description</label>
+      </div>
+      <div class="col-md-9">
+        <textarea
+          id="description"
+          [(ngModel)]="lesson.description"
+          name="description"
+          class="form-control"
+          placeholder="Enter a brief description of the lesson"
+        ></textarea>
+      </div>
+    </div>
+
+    <!-- Category -->
+    <div class="row mb-3">
+      <div class="col-md-3">
+        <label for="category" class="form-label">Category</label>
+      </div>
+      <div class="col-md-9">
+        <input
+          type="text"
+          id="category"
+          [(ngModel)]="lesson.category"
+          name="category"
+          class="form-control"
+          placeholder="Enter the lesson category"
+        />
+      </div>
+    </div>
+
+    <!-- Level -->
+    <div class="row mb-3">
+      <div class="col-md-3">
+        <label for="level" class="form-label">Level</label>
+      </div>
+      <div class="col-md-9">
+        <input
+          type="text"
+          id="level"
+          [(ngModel)]="lesson.level"
+          name="level"
+          class="form-control"
+          placeholder="Enter the lesson level (e.g., Beginner, Intermediate)"
+        />
+      </div>
+    </div>
+
+    <!-- Prerequisite -->
+    <div class="row mb-3">
+      <div class="col-md-3">
+        <label for="prerequisite" class="form-label">Prerequisite</label>
+      </div>
+      <div class="col-md-9">
+        <input
+          type="text"
+          id="prerequisite"
+          [(ngModel)]="prerequisiteInput"
+          name="prerequisite"
+          class="form-control"
+          placeholder="Enter prerequisites, separated by commas"
+        />
+      </div>
+    </div>
+
+    <!-- Tags -->
+    <div class="row mb-3">
+      <div class="col-md-3">
+        <label for="tags" class="form-label">Tags</label>
+      </div>
+      <div class="col-md-9">
+        <input
+          type="text"
+          id="tags"
+          [(ngModel)]="tagsInput"
+          name="tags"
+          class="form-control"
+          placeholder="Enter tags, separated by commas"
+        />
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="row mb-3">
+      <div class="col-md-3">
+        <label for="copyright" class="form-label">Copyright</label>
+      </div>
+      <div class="col-md-9">
+        <input
+          type="text"
+          id="copyright"
+          [(ngModel)]="lesson.copyright"
+          name="copyright"
+          class="form-control"
+          placeholder="Enter the copyright information"
+        />
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="row">
+      <div class="col-md-12 text-end">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>

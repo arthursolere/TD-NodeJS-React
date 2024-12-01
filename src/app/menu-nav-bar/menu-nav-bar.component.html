@@ -1,0 +1,75 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <!-- Home Icon -->
+    <a class="navbar-brand" routerLink="">
+      <fa-icon [icon]="faHome"/>
+    </a>
+
+    <!-- Menu Items -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav me-auto">
+        <!-- File Sub-menu -->
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" id="fileMenu" role="button" data-bs-toggle="dropdown"
+             aria-expanded="false">
+            File
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="fileMenu">
+            <li><a class="dropdown-item" routerLink="">Explore Lessons</a></li>
+            <li><a class="dropdown-item" routerLink="lesson-edit-form">Edit Lessons</a></li>
+            <li><a class="dropdown-item" routerLink="">Import...</a></li>
+            <li><a class="dropdown-item" routerLink="">New...</a></li>
+            <li><a class="dropdown-item" routerLink="">Export...</a></li>
+          </ul>
+        </li>
+
+        <!-- Study Now -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="">Study Now</a>
+        </li>
+
+        <!-- Progresses Statistics -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="">Progresses Statistics</a>
+        </li>
+
+        <!-- Achievements -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="">Achievements</a>
+        </li>
+
+        <!-- Help Sub-menu -->
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" id="helpMenu" role="button" data-bs-toggle="dropdown"
+             aria-expanded="false">
+            Help
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="helpMenu">
+            <li><a class="dropdown-item" routerLink="">Glossary</a></li>
+            <li><a class="dropdown-item" routerLink="">Documentation</a></li>
+            <li><a class="dropdown-item" routerLink="">About</a></li>
+          </ul>
+        </li>
+
+        <!-- Lesson n° 1234-->
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/lesson', 1234 ]">Link for Lesson 1234</a>
+        </li>
+      </ul>
+
+      <!-- Profile Sub-menu (Top Right Corner) -->
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" id="profileMenu" role="button" data-bs-toggle="dropdown"
+             aria-expanded="false">
+            Profile
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileMenu">
+            <li><a class="dropdown-item" routerLink="">Login / Logout</a></li>
+            <li><a class="dropdown-item" routerLink="">Settings</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

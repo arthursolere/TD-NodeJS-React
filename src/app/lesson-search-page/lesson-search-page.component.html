@@ -1,0 +1,95 @@
+<div class="container mt-5">
+  <!-- Basic/Advanced Toggle -->
+  <div class="mb-4 text-end">
+    <button class="btn btn-outline-secondary" id="toggleMode" (click)="toggleSearchMode()">
+      Toggle {{ isAdvanced ? 'Basic' : 'Advanced' }} Search Mode
+    </button>
+  </div>
+
+  <!-- Search Fields -->
+  <form>
+    <!-- Title -->
+    <div class="row mb-3">
+      <div class="col-md-3">
+        <label for="title" class="form-label">Title</label>
+      </div>
+      <div class="col-md-9">
+        <input type="text" id="title" class="form-control rounded" placeholder="Search by title">
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div class="row mb-3">
+      <div class="col-md-3">
+        <label for="description" class="form-label">Description</label>
+      </div>
+      <div class="col-md-9">
+        <input type="text" id="description" class="form-control rounded" placeholder="Search by description">
+      </div>
+    </div>
+
+    <!-- Category -->
+    <div class="row mb-3">
+      <div class="col-md-3">
+        <label for="category" class="form-label">Category</label>
+      </div>
+      <div class="col-md-9">
+        <input type="text" id="category" class="form-control rounded" placeholder="Search by category">
+      </div>
+    </div>
+
+    <!-- Level -->
+    <div class="row mb-3">
+      <div class="col-md-3">
+        <label for="level" class="form-label">Level</label>
+      </div>
+      <div class="col-md-9">
+        <input type="text" id="level" class="form-control rounded" placeholder="Search by level">
+      </div>
+    </div>
+
+    <!-- Tags -->
+    <div class="row mb-3">
+      <div class="col-md-3">
+        <label for="tags" class="form-label">Tags</label>
+      </div>
+      <div class="col-md-9">
+        <input type="text" id="tags" class="form-control rounded" placeholder="Search by tags">
+      </div>
+    </div>
+
+    <!-- Author -->
+    <div class="row mb-3">
+      <div class="col-md-3">
+        <label for="author" class="form-label">Author</label>
+      </div>
+      <div class="col-md-9">
+        <input type="text" id="author" class="form-control rounded" placeholder="Search by author">
+      </div>
+    </div>
+
+    <!-- Last Modified Date -->
+    <div class="row mb-3">
+      <div class="col-md-3">
+        <label for="lastModifiedDate" class="form-label">Last Modified Date</label>
+      </div>
+      <div class="col-md-9">
+        <div class="row g-2">
+          <div class="col">
+            <input type="date" class="form-control rounded" id="startDate" placeholder="Start date">
+          </div>
+          <div class="col">
+            <input type="date" class="form-control rounded" id="endDate" placeholder="End date">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search Button -->
+    <div class="row mt-4">
+      <div class="col text-center">
+        <button class="btn btn-primary">Search</button>
+      </div>
+    </div>
+  </form>
+</div>
